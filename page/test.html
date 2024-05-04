@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+   
+    <Style>
+      *{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+/* Index html css */
+
+.b1{
+    background-color:  rgb(255, 255, 255);
+}
+
+/* header css */
+#header{
+background-color:  #E7E7E7;
+width: 100%;
+height: 90px;
+}
+
+
+
+
+.img{
+    float:left;
+}
+
+#img1 {
+    width: 120px;
+    height: 100px;
+    padding-left: 35px;
+    padding-top: 15px;
+    margin: -20px;
+
+  }
+
+nav{
+    padding-top: 40px;
+   padding-left: 300px;
+}  
+
+nav a{
+    font-size: 18px;
+    color: #070707;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left:20px ;
+    font-family: sans-serif;
+}
+
+nav a:hover
+{
+    color: #039E3E;
+
+}
+
+.active {
+    /* Define your active link styles here */
+    
+    color: #0285C8; 
+}
+
+
+.log{
+    float: right;
+    margin-right: 80px;
+    margin-top: -35px;
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid;
+    background-color: #070707;
+  }
+
+.log a{
+   
+    text-decoration: none;    
+    color:rgb(255, 255, 255);   
+    font-size: 15px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.log a i{
+   padding-right: 5px;
+}
+
+.log:hover {
+    background-color: #039E3E; 
+    cursor: pointer;
+  }
+
+
+  .container1{
+    width: 100%;
+    height: 50%;
+  }
+
+
+
+/* Image slider CSS */
+
+main {
+    position: relative;
+    width: 1500px;
+    height: 700px;
+    margin: 80px auto 0px auto;
+   
+    box-shadow: 0px 0px 3px gray;
+    overflow: hidden;
+}
+
+.slide {
+    transition: 1s;
+    width: 1500px;
+    height: 700px;
+    position: absolute;
+}
+
+
+
+
+  
+/*  */
+
+
+
+  /* body css */
+.container1{
+    width: 1485px;
+    height: 550px;
+    background-color: #E7E7E7;
+    margin: 40px auto 0px auto;
+    padding: 10px;
+}
+
+
+
+.para{
+    margin-left:30px;
+    padding-top: 15px;
+    font-size:15px;
+  }
+
+
+
+
+
+.para p{
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 25px;
+    line-height: 25px;
+  }
+
+.img2{
+    float: left;
+    width: 750px;
+    height: 500px;
+    padding: 20px;
+  }
+
+
+
+.btn{
+    margin-left: 250px;  
+    display: inline-block; 
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid;
+    background-color: #0285C8;
+  
+    
+}
+
+.btn:hover{
+    background-color:#039E3E;
+}
+
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.btn a i{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.container345 {
+    position: relative;
+    display: inline-block;
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 80px;
+  }
+
+
+.img-css{
+    width: 1500px;
+    height: 700px;
+}
+
+
+
+
+
+.topleft{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Background color with opacity */
+    padding: 40px;
+}
+
+.topleft p{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #DE0325;
+    -webkit-text-stroke: 1px black; /* Black stroke around text */
+    
+}
+
+
+  /* Footer Css */
+.footer{
+    background-color: black;
+    height: 430px;
+    width: 100%;
+    margin-top: 40px;
+    font-family: sans-serif; 
+}
+
+.menu3{
+    padding: 10px 100px 100px 10px;
+    margin-left: 500px;
+    height: 100px; 
+}
+
+.foot-img{
+    float:left;
+    padding: 30px;
+}
+
+.foot-menu1{
+    float: left;
+    padding: 20px;
+}
+
+.foot-menu1 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.foot-menu1 ul li a:hover{
+    
+    color: rgb(220, 69, 236);
+}
+
+.foot-menu2{
+    float: left;
+    padding: 20px;
+}
+
+.foot-menu2 ul li a{
+    text-decoration: none;
+    color: white;
+}
+.foot-menu2 ul li a:hover{
+    
+    color: rgb(220, 69, 236);
+}
+
+
+.foot-menu1 ul li{
+    padding: 5px;
+}
+
+.foot-menu2 ul li{
+    padding: 5px;
+}
+
+
+.foot-img2{
+    height: 100px;
+    width: 200px;
+}
+
+.menu2 ul li{
+    list-style: none;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.menu2 ul li a{
+    color: rgb(252, 249, 249);
+    text-decoration: none;
+}
+
+.menu2 {
+    text-align:center;
+    padding: 10px;
+}
+
+.menu2 ul li a:hover {
+    color: #8663ff;
+  }
+
+
+.download{
+    text-align:center;
+    padding: 10px;
+    background-color: #181818;
+}
+
+.download ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.app-img{
+    width: 120px;
+    height: 40px;
+}
+
+.and-img{
+    width: 120px;
+    height: 40px;
+}
+
+
+.social{
+    text-align:center;
+    padding: 10px;
+}
+
+.social ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.social ul li a{
+    color: white;
+    font-size: 25px;
+    padding: 25px;
+    text-align: justify;
+}
+
+.social ul li a:hover {
+    color: #8663ff;
+}
+
+
+.copyright{
+    background-color: #181818;
+    padding: 2px;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.copyright ul li {
+    list-style: none;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+
+
+        @media (max-width: 1480px) {
+          .dropbtn{
+            display: none;
+          }
+          
+        }
+
+        @media (max-width: 1880px) {
+          .dropbtn{
+            display: none;
+          }
+          
+        }
+
+
+@media (max-width: 480px) {
+            /* Responsive styles for smaller screens */
+.b1{
+    width: 430px !important;
+    height: 932px !important;
+  }
+            
+ #header{
+  background-color:  #E7E7E7;
+   width: 420px!important;
+   height: 100px;
+}
+
+          
+ .img{
+  float:left;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+ 
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-right: 15px;
+  margin-top: 25px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0; /* Position the dropdown menu to the right edge */
+  background-color: #f9f9f9;
+  padding: 10px;
+  text-align: right;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  white-space: nowrap; /* Prevent the word from breaking into multiple lines */
+  transition: background-color 0.3s;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+
+  color: #3e8e41 !important; /* Add !important to override other styles */
+}
+
+main {
+   display: none;
+}
+
+.container1{
+  width: 420px !important;
+  height: 650px;
+  background-color: #E7E7E7;
+  margin: 40px auto 0px auto;
+  padding: 10px;
+ }       
+
+
+ .img1 {
+   width: 400px !important;
+   height: 160px;
+   margin-left: 20px;
+}
+
+.log{
+  float: right;
+  margin-right: 20px;
+  margin-top: 25px;
+  font-family: sans-serif;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid;
+  background-color: #070707;
+}
+
+
+.img2{
+ width:320px ;
+                 height: 200px;
+             
+              }
+
+                .para{
+                  display: inline-block;
+                }
+
+       
+        .para h1{
+                font-size: 15px;
+                text-align: center;
+            }
+
+          .para p{
+            font-size: 11px;
+            line-height: 15px;
+          }
+            
+
+  .btn{                
+ text-align: center;
+  font-family: sans-serif;
+ padding: 5px;
+ border-radius: 20px;
+  border: 1px solid;
+  background-color: #0285C8;
+   margin-left: 310px;
+}
+
+.btn:hover{
+  background-color:#039E3E;
+}
+
+
+.btn a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.btn a i{
+  text-decoration: none;
+  color: white;
+padding: 5px;
+}
+
+ .container345 {
+  float: center;
+   margin-top: 40px;
+  width: 425px;
+              
+             
+              }
+              .img-css{
+                width: 4205px !important;
+              }
+            
+
+            .img-css img{
+                width: 475px;
+                height: 300px;
+                float: left;
+
+            }
+
+
+              .topleft{
+                  position: absolute;
+                  top: 20%;
+                  left: 43%;
+                  transform: translate(-20%, -20%);
+                  background-color: rgba(255, 255, 255, 0.7); /* Background color with opacity */
+                  padding: 20px;
+              }
+
+              .topleft p{
+                  font-size: 20px;
+                  font-weight: bold;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #DE0325;
+                  -webkit-text-stroke: 1px black; /* Black stroke around text */
+                  
+              }
+                  
+            
+            .footer{
+                background-color: black;
+                  height: 430px;
+                 width: 475px !important;
+               font-family: sans-serif;
+             
+              }
+
+              .foot-menu1{
+                display: none;
+              }
+
+              .foot-menu2{
+                display: none;
+              }
+              .foot-img{
+                
+                float: none;
+           
+                }
+         
+        }
+
+
+    </Style>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="b1">
+    
+    <div id="header">
+        <div class="img">
+            <a href="index.html" ><img src="../image/logo.png" id="img1"></a>
+        </div>
+        
+          <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+           <nav class="dropdown-content">
+            <a href="index.html" class="home12">Home</a>
+            <a href="http://localhost/projectdev/page/sports.php" class="sport12">Sports</a>
+            <a href="http://localhost/projectdev/page/news.php" class="news12">News</a>
+            <a href="page/highlight.html" class="highlight12">Highlights</a>
+            <a href="page/venue.html"class="venue12">Venues</a>
+            <a href="page/schedule.html" class="schedule12">Game Schedule</a>
+            <a href="page/result.html" class="result12">Result</a>
+            <a href="page/contact.html" class="contact12">Contact Us</a>
+            <a href="page/about.html" class="about12">About</a>
+           </nav> 
+        </div>
+       
+
+
+        <div class="log">
+            <a href="http://localhost/projectdev/page/login.php"><i class="fa-regular fa-user"></i>Sign In</a>
+        </div>
+    </div>
+    <main>
+        <div class="slider-container">
+            <div class="slide">
+                <img src="../image/olympic.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="../image/olympic1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="../image/olympic2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="../image/olympic3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="../image/olympic4.jpg" alt="">
+            </div>
+        </div>
+    </main>
+
+    <div class="container1">
+        <div class="img1">
+            <img src="../image/olympic.jpg" class="img2" >
+        </div>
+        <div class="para">
+            <h1 style="font-family: sans-serif";>Fun Olympic 2024 </h1>
+            <h1 style="font-family: sans-serif";>City of Paryis </h1>
+            <p>Paryis 2024 will see a new vision of Olympism in action, delivered in a unique spirit of international celebration.
+
+                We will offer one of the worlds most inspirational cities as a memorable stage for the athletes and a truly global platform to promote them, and their incredible stories.
+                
+                And we will partner with the entire Olympic family to demonstrate that, more than ever after an extremely challenging period, sport has a unique power to help create a better world.
+                
+                Our plan features 95 percent existing or temporary venues, and every single one has a clear, defined legacy aligned with the citys long-term development plans.
+                
+                The sporting celebration will flow along the Seine, from the new Olympic Village, just 15 minutes from Paris city centre, to such city centre landmarks as the Eiffel Tower and the Grand Palais.
+                Just how far back in history organized athletic contests were held remains a matter of debate, but it is reasonably certain that they occurred in Greece almost 3,000 years ago. However ancient in origin, by the end of the 6th century BCE at least four Greek sporting festivals, sometimes called “classical games,” had achieved major importance: the Olympic Games, held at Olympia; the Pythian Games at Delphi; the Nemean Games at Nemea; and the Isthmian Games, held near Corinth. </p>
+        </div>
+        <div class="btn"><a href="page/about.html"><i class="fa-brands fa-readme"></i></i>Read More</a></div>
+    </div>
+
+    <div class="container345">
+        <div class="img-css"><img src="../image/olympic111.jpg" alt=""></div>
+        <div class="topleft">
+              <p>Fun Olympic 2024</p>
+              <p> City of Paryis </p>
+        </div>
+    </div>
+
+    <script type="application/javascript">
+       
+
+    </script>
+
+    
+    <div class="footer"> 
+        <div class="menu3">
+            <div class="foot-img">
+                <a href="page1/index.html"><img class="foot-img2" src="../image/whitelogo.png"></a>
+            </div>
+            <div class="foot-menu1" >
+                <ul>
+                    <li><a href="index.html">Olympics</a></li>
+                    <li><a href="index.html">Result & Medals</a></li>
+                    <li><a href="index.html">Highlights</a></li>
+                    <li><a href="index.html">TV Channel</a></li>
+                    <li><a href="index.html">Venue</a></li>
+                </ul>
+            </div>
+            <div class="foot-menu2" >
+                <ul>
+                    <li><a href="index.html">Live Events</a></li>
+                    <li><a href="index.html">Sports</a></li>
+                    <li><a href="index.html">News</a></li>
+                    <li><a href="index.html">Terms of Service</a></li>
+                    <li><a href="index.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="menu2" >
+            <ul>
+                <li><a href="index.html">International Olympic Committee</a></li>
+                <li><a href="index.html">Sports</a></li>
+                <li><a href="index.html">Site Map</a></li>
+                <li><a href="index.html">Contact Center</a></li>
+                <li><a href="index.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="download">
+            <ul>
+                <li><a href=""><img class="app-img" src="../image/apple.png"></a></li>
+                <li><a href=""><img class="and-img" src="../image/android.jpeg"></a></li>
+            </ul>
+
+        </div>      
+        <div class="social">
+            <ul>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="copyright" >
+            <ul>
+                <li><i class="fa-solid fa-copyright"></i></li>
+                <li><p>Copyright 2024. All rights reserved</p></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+    
+    // Get the current page URL
+    var currentPageUrl = window.location.href;
+
+    // Get all the menu links
+    var menuLinks = document.querySelectorAll('nav a');
+
+    // Loop through each menu link
+    menuLinks.forEach(function(link) {
+        // Check if the link href matches the current page URL
+        if (link.href === currentPageUrl) {
+            // Add a class to highlight the active link
+            link.classList.add('active');
+        }
+    });
+
+    </script>
+
+    <script>
+      
+// Iamge Slider JS
+const slides = document.querySelectorAll(".slide");
+const sliderContainer = document.querySelector(".slider-container");
+let counter = 0;
+
+slides.forEach((slide, index) => {
+    slide.style.left = `${index * 100}%`;
+});
+
+const goPrev = () => {
+    counter--;
+    slideImage();
+};
+
+const goNext = () => {
+    counter++;
+    slideImage();
+};
+
+const slideImage = () => {
+    if (counter < 0) {
+        counter = slides.length - 1;
+    } else if (counter >= slides.length) {
+        counter = 0;
+    }
+
+    sliderContainer.style.transform = `translateX(-${counter * 100}%)`;
+};
+
+
+const startAutoplay = () => {
+    interval = setInterval(goNext, 3000); // Change slide every 3 seconds
+};
+
+const stopAutoplay = () => {
+    clearInterval(interval);
+};
+
+startAutoplay();
+
+// Pause autoplay on mouse hover
+sliderContainer.addEventListener("mouseover", stopAutoplay);
+
+// Resume autoplay on mouse leave
+sliderContainer.addEventListener("mouseout", startAutoplay);
+//
+
+    </script>
+
+
+<script>
+  // JavaScript for toggling the navbar on small screens
+  const navbarToggle = document.querySelector('.navbar-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  navbarToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+  });
+</script>
+
+<script>
+  // Get the dropdown button and dropdown content
+  var dropdownBtn = document.querySelector('.dropbtn');
+  var dropdownContent = document.querySelector('.dropdown-content');
+
+  // Function to close the dropdown when clicking outside of it
+  window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn') && !event.target.matches('.dropdown-content')) {
+          dropdownContent.style.display = 'none';
+      }
+  };
+
+  // Function to toggle the display of the dropdown content
+  dropdownBtn.onclick = function() {
+      if (dropdownContent.style.display === 'block') {
+          dropdownContent.style.display = 'none';
+      } else {
+          dropdownContent.style.display = 'block';
+      }
+  };
+</script>
+ <script src="../page/script.js"></script>
+</body>
+</html>
+
+
+
+
+<div class="log123456">
+    <div class="log12345">
+      <a href="../page1/logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+    </div>
+    <div class="log1234">
+    </div>
+</div>
