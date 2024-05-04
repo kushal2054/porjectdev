@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="b1">
+    <div id="header">
+        
+        <div class="img">
+            <a href="../page1/index.html"><img src="../image/logo.png" id="img1"></a>
+        </div>
+
+
+        <div class="dropdown">
+           <nav class="dropdown-content">
+            <a href="../page1/index.html" class="home12">Home</a>
+            <a href="http://localhost/projectdev/page1/sports.php" class="sport12">Sports</a>
+            <a href="http://localhost/projectdev/page1/news.php" class="news12">News</a>
+            <a href="../page1/highlight.html" class="highlight12">Highlights</a>
+            <a href="http://localhost/projectdev/page1/live.php" class="live12">Live</a>
+            <a href="../page1/venue.html"class="venue12">Venues</a>
+            <a href="../page1/schedule.html" class="schedule12">Game Schedule</a>
+            <a href="../page1/result.html" class="result12">Result</a>
+            <a href="../page1/contact.html" class="contact12">Contact Us</a>
+            <a href="../page1/about.html" class="about12">About</a>
+           </nav> 
+        </div> 
+
+        <div class="log1298">
+    <button class="notificationButton" onclick="toggleNotification()"><i class="fa fa-bell" aria-hidden="true"></i></button>
+    <div class="notificationMessage hidden">
+     <span class="notcloseButton" onclick="hideNotification()">&times;</span>
+     <p>1. Welcome to the platform.</p>
+             <p>2. There is new video uploaded.</p>
+    </div>
+    </div>
+
+
+    <div class="log123456">
+         <div class="log12345">
+           <a href="../page1/logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+         </div>
+         <div class="log1234">
+  
+             <a href="normaluser.php?email=<?= $_SESSION['email']; ?>&regid=<?= $_SESSION['regid']; ?>"><i class="fa-regular fa-user"></i>User</a>
+
+        </div>
+    </div>
+</div>
+    
+    <div class="container-sche">
+        <h2>Olympic Game Schedule</h2>
+    
+        <!-- Dropdown select for games -->
+        <label for="gameSelect">Select a game:</label>
+        <select id="gameSelect" onchange="filterGames()" class="slect-hig">
+            <option value="all">All Games</option>
+            <option value="Ceremony">Ceremony</option>
+            <option value="Swimming">Swimming</option>
+            <option value="Gymnastics">Gymnastics</option>
+            <option value="Athletics">Athletics</option>
+            <option value="Cycling">Cycling</option>
+            <option value="Rowing">Rowing</option>
+            <option value="Basketball">Basketball</option>
+            <!-- Add more options for other sports -->
+        </select>
+    
+        <table id="gameTable">
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Sport</th>
+                <th>Event</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>July 24, 2024</td>
+                <td>10:00 AM</td>
+                <td>Swimming</td>
+                <td>Men's 100m Freestyle Final</td>
+                <td>Aquatics Centre</td>
+            </tr>
+            <tr>
+                <td>July 25, 2024</td>
+                <td>3:00 PM</td>
+                <td>Gymnastics</td>
+                <td>Women's Team All-Around Final</td>
+                <td>Gymnastics Arena</td>
+            </tr>
+            <tr>
+                <td>July 26, 2024</td>
+                <td>11:30 AM</td>
+                <td>Athletics</td>
+                <td>Men's 100m Preliminary Round</td>
+                <td>Olympic Stadium</td>
+            </tr>
+            <!-- Additional game entries -->
+            <tr>
+                <td>July 27, 2024</td>
+                <td>2:00 PM</td>
+                <td>Cycling</td>
+                <td>Women's Road Race</td>
+                <td>City Streets</td>
+            </tr>
+            <tr>
+                <td>July 28, 2024</td>
+                <td>9:30 AM</td>
+                <td>Rowing</td>
+                <td>Women's Coxless Pair Final</td>
+                <td>Rowing Centre</td>
+            </tr>
+            <tr>
+                <td>July 29, 2024</td>
+                <td>6:00 PM</td>
+                <td>Basketball</td>
+                <td>Men's Semifinals</td>
+                <td>Basketball Arena</td>
+            </tr>
+            <!-- Add more rows for other events -->
+    
+            <!-- Opening and Closing Ceremonies -->
+            <tr>
+                <td>July 23, 2024</td>
+                <td>8:00 PM</td>
+                <td>Ceremony</td>
+                <td>Opening Ceremony</td>
+                <td>Olympic Stadium</td>
+            </tr>
+            <tr>
+                <td>August 8, 2024</td>
+                <td>7:30 PM</td>
+                <td>Ceremony</td>
+                <td>Closing Ceremony</td>
+                <td>Olympic Stadium</td>
+            </tr>
+        </table>
+        </div>
+    <div class="footer-sche"> 
+        <div class="menu3">
+            <div class="foot-img">
+                <a href="../index.html"><img class="foot-img2" src="../image/whitelogo.png"></a>
+            </div>
+            <div class="foot-menu1" >
+                <ul>
+                    <li><a href="index.html">Olympics</a></li>
+                    <li><a href="index.html">Result & Medals</a></li>
+                    <li><a href="index.html">Highlights</a></li>
+                    <li><a href="index.html">TV Channel</a></li>
+                    <li><a href="index.html">Venue</a></li>
+                </ul>
+            </div>
+            <div class="foot-menu2" >
+                <ul>
+                    <li><a href="index.html">Live Events</a></li>
+                    <li><a href="index.html">Sports</a></li>
+                    <li><a href="index.html">News</a></li>
+                    <li><a href="index.html">Terms of Service</a></li>
+                    <li><a href="index.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="menu2" >
+            <ul>
+                <li><a href="index.html">International Olympic Committee</a></li>
+                <li><a href="index.html">Sports</a></li>
+                <li><a href="index.html">Site Map</a></li>
+                <li><a href="index.html">Contact Center</a></li>
+                <li><a href="index.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="download">
+            <ul>
+                <li><a href=""><img class="app-img" src="../image/apple.png"></a></li>
+                <li><a href=""><img class="and-img" src="../image/android.jpeg"></a></li>
+            </ul>
+
+        </div>      
+        <div class="social">
+            <ul>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="copyright" >
+            <ul>
+                <li><i class="fa-solid fa-copyright"></i></li>
+                <li><p>Copyright 2024. All rights reserved</p></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function filterGames() {
+            var selectBox = document.getElementById("gameSelect");
+            var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+            var rows = document.getElementById("gameTable").getElementsByTagName("tr");
+    
+            for (var i = 1; i < rows.length; i++) {
+                var sport = rows[i].getElementsByTagName("td")[2].textContent;
+                if (selectedValue === "all" || sport === selectedValue) {
+                    rows[i].style.display = "";
+                } else {
+                    rows[i].style.display = "none";
+                }
+            }
+        }
+        
+        $(function(){
+    // this will get the full URL at the address bar
+    var url = window.location.href; 
+
+    // passes on every "a" tag 
+    $("#header a").each(function() {
+            // checks if its the same on the address bar
+        if(url == (this.href)) { 
+            $(this).closest("li").addClass("active");
+        }
+    });
+});
+
+  
+    </script>
+<script>
+    // Get the current page URL
+    var currentPageUrl = window.location.href;
+
+    // Get all the menu links
+    var menuLinks = document.querySelectorAll('nav a');
+
+    // Loop through each menu link
+    menuLinks.forEach(function(link) {
+        // Check if the link href matches the current page URL
+        if (link.href === currentPageUrl) {
+            // Add a class to highlight the active link
+            link.classList.add('active');
+        }
+    });
+</script>
+
+
+
+
+<script src="../page/script.js"></script>
+</body>
+</html>
